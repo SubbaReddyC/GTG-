@@ -152,8 +152,8 @@
        NSString *fileName = [filePath stringByAppendingPathComponent:
                           [NSString stringWithFormat:@"%@.png", name]];
     
-    NSLog(@"%@",comments);
-    NSLog(@"%@",imageData);
+   // NSLog(@"%@",comments);
+   // NSLog(@"%@",imageData);
     NSLog(@"%@",fileName);
   
     

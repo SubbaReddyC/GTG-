@@ -56,7 +56,7 @@
     UIButton *btnPreview=(UIButton *)[rejectedCell viewWithTag:104];
     UIButton *btnUpload=(UIButton *)[rejectedCell viewWithTag:105];
     
-    NSLog(@"%@",[[rejecteddocsArray objectAtIndex:indexPath.section]valueForKey:@"loadID"]);
+   // NSLog(@"%@",[[rejecteddocsArray objectAtIndex:indexPath.section]valueForKey:@"loadID"]);
     lblLoadId.text=[[rejecteddocsArray objectAtIndex:indexPath.section]valueForKey:@"loadID"];
     
     lblDocType.text=[[rejecteddocsArray objectAtIndex:indexPath.section]valueForKey:@"docType"];
