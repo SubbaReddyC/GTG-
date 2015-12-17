@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SignaturePopUp">
+            <rect key="frame" x="0.0" y="0.0" width="280" height="142"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rkj-D8-SSy">
+                    <rect key="frame" x="0.0" y="0.0" width="280" height="34"/>
+                    <color key="backgroundColor" red="0.058823529409999999" green="0.16862745100000001" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="QlH-XQ-Uge"/>
+                    </constraints>
+                    <state key="normal" title="Choose a proof method">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="S7I-Cr-KJm">
+                    <rect key="frame" x="2" y="48" width="276" height="89"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eId-YY-Fk2">
+                    <rect key="frame" x="5" y="94" width="270" height="2"/>
+                    <color key="backgroundColor" red="0.027450980390000001" green="0.1019607843" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="PJI-qT-k7C"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qBH-iZ-8am">
+                    <rect key="frame" x="2" y="98" width="276" height="30"/>
+                    <state key="normal" title="E-Billing"/>
+                    <connections>
+                        <action selector="btnBillingTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="9ND-cj-4ln"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0pj-7b-Cgl">
+                    <rect key="frame" x="5" y="58" width="270" height="30"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Upload E-Signature"/>
+                    <connections>
+                        <action selector="btnUploadSignatureTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="m3o-dk-LWd"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="S7I-Cr-KJm" firstAttribute="top" secondItem="rkj-D8-SSy" secondAttribute="bottom" constant="14" id="GKc-a6-wYD"/>
+                <constraint firstItem="qBH-iZ-8am" firstAttribute="top" secondItem="eId-YY-Fk2" secondAttribute="bottom" constant="2" id="J5u-fF-rZS"/>
+                <constraint firstAttribute="trailing" secondItem="rkj-D8-SSy" secondAttribute="trailing" id="JLK-8v-6bK"/>
+                <constraint firstAttribute="bottom" secondItem="S7I-Cr-KJm" secondAttribute="bottom" constant="5" id="Llr-Zx-75K"/>
+                <constraint firstAttribute="trailing" secondItem="S7I-Cr-KJm" secondAttribute="trailing" constant="2" id="Lpy-9a-RZY"/>
+                <constraint firstItem="rkj-D8-SSy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="N33-ID-yD4"/>
+                <constraint firstAttribute="trailing" secondItem="0pj-7b-Cgl" secondAttribute="trailing" constant="5" id="SUS-Wg-2Oz"/>
+                <constraint firstItem="qBH-iZ-8am" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="2" id="Zwd-x3-uYS"/>
+                <constraint firstItem="S7I-Cr-KJm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="2" id="b3K-8L-oXR"/>
+                <constraint firstItem="0pj-7b-Cgl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="fyR-RG-cOR"/>
+                <constraint firstItem="rkj-D8-SSy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="kBW-yS-cgZ"/>
+                <constraint firstAttribute="trailing" secondItem="eId-YY-Fk2" secondAttribute="trailing" constant="5" id="ln0-Hl-zei"/>
+                <constraint firstItem="eId-YY-Fk2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="nUF-SQ-0Vs"/>
+                <constraint firstItem="eId-YY-Fk2" firstAttribute="top" secondItem="0pj-7b-Cgl" secondAttribute="bottom" constant="6" id="nwu-m8-h6p"/>
+                <constraint firstAttribute="trailing" secondItem="qBH-iZ-8am" secondAttribute="trailing" constant="2" id="uBn-Pd-5Hh"/>
+                <constraint firstItem="0pj-7b-Cgl" firstAttribute="top" secondItem="rkj-D8-SSy" secondAttribute="bottom" constant="24" id="zr8-m5-fVw"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnBillingTaskType" destination="qBH-iZ-8am" id="SMz-4B-aju"/>
+                <outlet property="imgBorder" destination="S7I-Cr-KJm" id="laJ-4t-YFc"/>
+            </connections>
+            <point key="canvasLocation" x="471" y="213"/>
+        </view>
+    </objects>
+</document>

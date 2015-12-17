@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NotePopUp">
+            <rect key="frame" x="0.0" y="0.0" width="280" height="194"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IqJ-XM-OrD">
+                    <rect key="frame" x="2" y="2" width="276" height="190"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PnK-wd-cip">
+                    <rect key="frame" x="8" y="13" width="58" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="58" id="JxR-Yh-ccT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VvD-ae-pPK">
+                    <rect key="frame" x="8" y="40" width="264" height="1"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="nsY-ff-ebf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Lorem ipsum dolor sit er eli" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="CTV-jn-oGf">
+                    <rect key="frame" x="8" y="49" width="264" height="79"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="79" id="USH-LO-Zyx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZs-tA-SH6">
+                    <rect key="frame" x="99" y="142" width="82" height="30"/>
+                    <color key="backgroundColor" red="0.058823529409999999" green="0.16862745100000001" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="82" id="MCR-09-nmp"/>
+                        <constraint firstAttribute="height" constant="30" id="tx2-Gh-Va5"/>
+                    </constraints>
+                    <state key="normal" title="Close">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="btnCloseActionTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="NQ3-2g-ueP"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="CTV-jn-oGf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="0bF-rw-SM1"/>
+                <constraint firstItem="IqJ-XM-OrD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="2" id="0kY-hz-uHJ"/>
+                <constraint firstAttribute="bottom" secondItem="IqJ-XM-OrD" secondAttribute="bottom" constant="2" id="5dT-Id-uoK"/>
+                <constraint firstItem="SZs-tA-SH6" firstAttribute="top" secondItem="CTV-jn-oGf" secondAttribute="bottom" constant="14" id="E9q-8L-6SP"/>
+                <constraint firstItem="IqJ-XM-OrD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="2" id="I0Q-Nk-9mW"/>
+                <constraint firstItem="VvD-ae-pPK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="SO7-kr-hxu"/>
+                <constraint firstAttribute="trailing" secondItem="IqJ-XM-OrD" secondAttribute="trailing" constant="2" id="ZrN-Bw-B0N"/>
+                <constraint firstAttribute="trailing" secondItem="CTV-jn-oGf" secondAttribute="trailing" constant="8" id="aEt-8H-dvL"/>
+                <constraint firstItem="PnK-wd-cip" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="bp8-ch-Ezk"/>
+                <constraint firstItem="PnK-wd-cip" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="13" id="gAF-KI-77c"/>
+                <constraint firstAttribute="trailing" secondItem="VvD-ae-pPK" secondAttribute="trailing" constant="8" id="ich-AD-baP"/>
+                <constraint firstItem="CTV-jn-oGf" firstAttribute="top" secondItem="VvD-ae-pPK" secondAttribute="bottom" constant="8" id="jpS-mp-eNW"/>
+                <constraint firstItem="SZs-tA-SH6" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="lbw-fL-dPu"/>
+                <constraint firstItem="VvD-ae-pPK" firstAttribute="top" secondItem="PnK-wd-cip" secondAttribute="bottom" constant="6" id="vT6-xK-2eY"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imgBorder" destination="IqJ-XM-OrD" id="YNg-r1-Jys"/>
+                <outlet property="lblNote" destination="PnK-wd-cip" id="55A-CW-U0R"/>
+                <outlet property="txtViewNote" destination="CTV-jn-oGf" id="WFb-b7-cGa"/>
+            </connections>
+            <point key="canvasLocation" x="354" y="40"/>
+        </view>
+    </objects>
+</document>

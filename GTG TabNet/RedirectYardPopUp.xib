@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RedirectYardPopUp">
+            <rect key="frame" x="0.0" y="0.0" width="280" height="178"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Redirection Address" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Px6-3o-1Ef">
+                    <rect key="frame" x="3" y="3" width="274" height="35"/>
+                    <color key="backgroundColor" red="0.043137254899999998" green="0.1960784314" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="9MT-qK-IXA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qfp-eQ-Dp2">
+                    <rect key="frame" x="8" y="46" width="269" height="116"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="zhT-km-Dxu"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="u1j-rY-pym"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="qfp-eQ-Dp2" secondAttribute="trailing" constant="3" id="EXr-x2-0JH"/>
+                <constraint firstAttribute="bottom" secondItem="qfp-eQ-Dp2" secondAttribute="bottom" constant="16" id="EvK-Uz-II0"/>
+                <constraint firstItem="Px6-3o-1Ef" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="3" id="Nwa-q3-CuW"/>
+                <constraint firstItem="qfp-eQ-Dp2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="TCb-pT-jmy"/>
+                <constraint firstItem="qfp-eQ-Dp2" firstAttribute="top" secondItem="Px6-3o-1Ef" secondAttribute="bottom" constant="8" id="Thb-Tq-GGW"/>
+                <constraint firstAttribute="trailing" secondItem="Px6-3o-1Ef" secondAttribute="trailing" constant="3" id="el2-5p-aPx"/>
+                <constraint firstItem="Px6-3o-1Ef" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="3" id="yAU-ij-IyA"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="tblView" destination="qfp-eQ-Dp2" id="dNk-MA-zsZ"/>
+            </connections>
+            <point key="canvasLocation" x="518" y="19"/>
+        </view>
+    </objects>
+</document>
