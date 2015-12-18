@@ -15,6 +15,8 @@
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
+ 
+ //its done by me
 - (void)drawRect:(CGRect)rect {
     // Drawing code
 }
